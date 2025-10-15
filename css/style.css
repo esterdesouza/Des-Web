@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --main-bg-color: #f5f5f5;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 3rem);
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+/*==========
+HEADER
+============*/
+header nav {
+  margin: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid #E5E5E5;
+  padding: 4px;
+  border-radius: 30px;
+}
+
+header nav ul li a {
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: block;
+}
+header nav ul li a.atual {
+  background-color: black;
+  color: white;
+}
+
+/*==========
+BANNER
+============*/
+
+section.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  max-width: 8 00px;
+}
+section.banner h1 {
+  width: 50%;
+  font-size: 3rem;
+}
+section.banner h1 span {
+  font-weight: bold
+}
