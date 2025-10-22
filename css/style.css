@@ -50,6 +50,7 @@ header nav ul li a {
   padding: 10px 20px;
   display: block;
 }
+
 header nav ul li a.atual {
   background-color: black;
   color: white;
@@ -60,16 +61,155 @@ BANNER
 ============*/
 
 section.banner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  margin: 0 auto 0 auto;
+  margin: 5vw auto 0 auto;
   width: 80%;
-  max-width: 8 00px;
+  max-width: 1000px;
 }
+
 section.banner h1 {
-  width: 50%;
+  /*width: 50%;*/
   font-size: 3rem;
 }
+
 section.banner h1 span {
   font-weight: bold
+}
+
+.banner p {
+  color: #5A5A5A;
+  font-size: 1.5rem;
+}
+
+/*==========
+POSTS
+============*/
+
+
+.posts {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+section.posts>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.posts>ul>li {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(184, 184, 184);
+}
+
+.posts>ul>li h2 {
+  padding: 0 5px 13px 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.posts>ul>li p {
+  color: #757575;
+  line-height: 1.5rem;
+
+}
+
+.posts>ul>li ul {
+  display: flex;
+  gap: 20px;
+}
+
+.posts>ul>li ul li {
+  border-radius: 25px;
+  padding: 7px;
+  margin: 10px 0 0 0;
+  background-color: #f5f5f5;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/*========
+FOOTER
+=========*/
+
+footer {
+  background-color: white;
+  color: #7c7c7c;
+  border-radius: 20px;
+  margin: 40px 400px 200px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #dbdbdb;
+}
+
+/*========================
+PROJECTS
+==========================*/
+
+/*========
+POST
+=========*/
+.post {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+section.post>ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.post>ul>li {
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(184, 184, 184);
+}
+
+.post ul li h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 0 30px 0;
+}
+
+.post ul li p {
+  color: #757575;
+  margin: 10px 0 10px 0;
+}
+
+/*========================
+CONNECT
+==========================*/
+
+.app {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+section.app>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.app>ul>li {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+ 
+}
+
+.app>ul>li a i {
+  margin-right: 10px;
 }
